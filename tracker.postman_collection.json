@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "e6d1e29c-527c-4332-b723-94de9a03717f",
+		"name": "tracker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16018826"
+	},
+	"item": [
+		{
+			"name": "add_transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"date\": \"2025-08-24\",\n    \"description\": \"Grocery shopping at Walmart\",\n    \"category\": \"Groceries\",\n    \"amount\": \"125.75\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5001//api/transactions",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"",
+						"api",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "suggest_category_endpoint",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"date\": \"2025-08-24\",\n    \"description\": \"Grocery shopping at Walmart\",\n    \"category\": \"Groceries\",\n    \"amount\": \"125.75\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5001/api/suggestions/category",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"suggestions",
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5001/api/transactions",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "health_check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5001/health",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_analytics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5001/api/analytics",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"analytics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_balance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5001/api/balance",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

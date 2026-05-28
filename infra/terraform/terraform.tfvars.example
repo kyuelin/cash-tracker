@@ -1,0 +1,12 @@
+aws_region              = "us-east-1"
+project_name            = "cash-tracker"
+environment             = "dev"
+availability_zone_count = 2
+
+# Set these after pushing Docker images to ECR.
+# If left empty, Terraform will still create ECR repos and services will point to :latest in those repos.
+frontend_image = ""
+backend_image  = ""
+
+frontend_desired_count = 1
+backend_desired_count  = 1

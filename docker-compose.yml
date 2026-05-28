@@ -1,0 +1,28 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: cash-tracker-backend
+    environment:
+      PORT: "5001"
+      TRANSACTIONS_FILE: "data/transactions.json"
+      CATEGORIES_FILE: "data/categories.json"
+    volumes:
+      - ./backend/data:/app/data
+    ports:
+      - "5001:5001"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5001/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: cash-tracker-frontend
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "3000:80"

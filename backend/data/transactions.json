@@ -1,0 +1,12 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "date": "2025-08-24",
+      "description": "Grocery shopping at Walmart",
+      "category": "Groceries",
+      "amount": 125.75
+    }
+  ],
+  "cash_received": []
+}

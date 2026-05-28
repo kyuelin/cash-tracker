@@ -1,0 +1,29 @@
+{
+  "categories": [
+    "Food & Dining",
+    "Groceries",
+    "Transportation",
+    "Shopping",
+    "Entertainment",
+    "Bills & Utilities",
+    "Healthcare",
+    "Education",
+    "Travel",
+    "Personal Care",
+    "Gifts & Donations",
+    "Other"
+  ],
+  "descriptions": [
+    "Coffee",
+    "Lunch",
+    "Dinner",
+    "Grocery shopping",
+    "Gas",
+    "Parking",
+    "Movie tickets",
+    "Books",
+    "Pharmacy",
+    "Haircut",
+    "Grocery shopping at Walmart"
+  ]
+}
