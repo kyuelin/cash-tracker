@@ -345,3 +345,12 @@ npm install
 ## License
 
 MIT License - feel free to modify and distribute.
+
+## Maturity review
+
+**Maturity:** Functional MVP with a working local stack and an AWS deployment path.
+
+**What remains to make this a functional application:**
+- Add stronger auth/permission handling if it is meant for multiple users.
+- Expand automated tests around the API, UI, and deployment flow.
+- Harden backup, monitoring, and error handling for production use.
