@@ -2,6 +2,20 @@
 
 A full-stack application for tracking cash purchases with React frontend and Python Flask backend.
 
+## Repository contents
+
+Full-stack cash tracking app with a React frontend, Flask backend, and Terraform AWS deployment.
+
+- `ARCHITECTURE.md` — architecture overview and diagrams
+- `backend/` — Flask API and JSON persistence
+- `frontend/` — React UI and client-side code
+- `infra/` — Terraform for AWS ECS/EFS deployment
+- `deploy_aws.sh` — one-command build/push/deploy helper
+- `start_app.sh` — start both services locally
+- `start_backend.sh` — start the API only
+- `start_frontend.sh` — start the UI only
+- `docker-compose.yml` — local full-stack container setup
+- `tracker.postman_collection.json` — API request collection
 ## Index
 
 | Section | Link |
